@@ -234,7 +234,7 @@ export default function Home() {
             </div>
             <div className="group relative aspect-[5/6] w-full max-w-md justify-self-center overflow-hidden rounded-2xl lg:aspect-auto lg:max-w-none lg:min-h-[720px]">
               <Image
-                src="/images/hero-dubai.jpg"
+                src="/Images/hero-dubai.jpg"
                 alt="Dubai skyline at golden hour — the destination for Lumident Voyage luxury dental travel"
                 fill
                 priority
