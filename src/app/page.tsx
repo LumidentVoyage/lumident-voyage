@@ -223,9 +223,7 @@ export default function Home() {
                   className="inline-flex items-center justify-center bg-charcoal px-8 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
                 >
                   <Link href="/contact">   Start Your Consultation </Link>
-                  <Link href="/contact">
-  Start Your Consultation
-</Link>
+                
                 </a>
                 <a
                   href="#journey"
