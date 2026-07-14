@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 function PhotoPlaceholder({
   label,
   aspect = "4/5",
@@ -223,6 +223,9 @@ export default function Home() {
                   className="inline-flex items-center justify-center bg-charcoal px-8 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
                 >
                   Start Your Consultation
+                  <Link href="/contact">
+  Start Your Consultation
+</Link>
                 </a>
                 <a
                   href="#journey"
@@ -576,5 +579,109 @@ export default function Home() {
         </div>
       </footer>
     </div>
+  );
+}
+export default function ContactPage() {
+  return (
+    <main className="min-h-screen bg-[#f8f6f2] py-24 px-6">
+      <div className="max-w-3xl mx-auto">
+        <h1 className="text-5xl font-serif mb-4">
+          Start Your Consultation
+        </h1>
+
+        <p className="text-gray-600 mb-12 text-lg">
+          Tell us a little about yourself and your smile goals. Our team
+          will contact you to arrange your complimentary consultation.
+        </p>
+
+        <form
+          action="https://formsubmit.co/admin@lumidentvoyage.com"
+          method="POST"
+          className="space-y-6"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Lumident Voyage Consultation"
+          />
+
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+          />
+
+          <div>
+            <label className="block mb-2">
+              Full Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              required
+              className="w-full border p-4 rounded-lg"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2">
+              Email Address
+            </label>
+            <input
+              type="email"
+              name="email"
+              required
+              className="w-full border p-4 rounded-lg"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              name="phone"
+              className="w-full border p-4 rounded-lg"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2">
+              Treatment Interest
+            </label>
+
+            <select
+              name="treatment"
+              className="w-full border p-4 rounded-lg"
+            >
+              <option>Porcelain Veneers</option>
+              <option>Full Smile Makeover</option>
+              <option>Dental Implants</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div>
+            <label className="block mb-2">
+              Tell us about your goals
+            </label>
+
+            <textarea
+              name="message"
+              rows={5}
+              className="w-full border p-4 rounded-lg"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-black text-white px-8 py-4 rounded-lg"
+          >
+            Request Consultation
+          </button>
+        </form>
+      </div>
+    </main>
   );
 }
