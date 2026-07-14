@@ -125,7 +125,7 @@ const faqs = [
       "Absolutely. We specialize in serving American patients, handling logistics from major US cities to Dubai so you can focus entirely on your experience.",
   },
 ];
-import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="bg-ivory text-charcoal">
