@@ -100,14 +100,7 @@ export default function ContactPage() {
 
             <div className="grid gap-7 md:grid-cols-2">
               <div>
-                <label className="mb-2 block text-sm">Full Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  className={inputClass}
-                />
-              </div>
+             
 
               <div>
                 <label className="mb-2 block text-sm">Email Address</label>
