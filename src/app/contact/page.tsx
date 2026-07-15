@@ -195,50 +195,85 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div>
-              <label className="mb-2 block text-sm">
-                Tell us about your goals
-              </label>
-<div className="space-y-5">
-  <div>
-    <label className="mb-2 block text-sm">Smile Photo</label>
-    <input
-      type="file"
-      name="smile_photo"
-      accept="image/jpeg,image/png"
-      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
-    />
+<div>
+  <label className="mb-2 block text-sm">
+    Tell us about your goals
+  </label>
+
+  <textarea
+    name="message"
+    rows={6}
+    className={inputClass}
+    placeholder="What would you like to improve about your smile?"
+  />
+</div>
+
+<div className="border-t border-[#ded7cc] pt-7">
+  <div className="mb-6">
+    <p className="text-sm font-medium text-[#2b2a28]">
+      Supporting files
+    </p>
+
+    <p className="mt-2 text-xs leading-6 text-[#746d64]">
+      Optional. You may upload smile photographs, a dental X-ray, or an
+      existing treatment plan. Accepted formats: JPG, PNG, and PDF. Maximum
+      combined size: 10 MB.
+    </p>
   </div>
 
-  <div>
-    <label className="mb-2 block text-sm">Dental X-ray</label>
-    <input
-      type="file"
-      name="dental_xray"
-      accept="image/jpeg,image/png,application/pdf"
-      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
-    />
-  </div>
+  <div className="grid gap-5 md:grid-cols-3">
+    <label className="cursor-pointer border border-[#cfc7bb] bg-[#f8f5ef] p-5 transition hover:border-[#b99a5f]">
+      <span className="block text-sm font-medium">
+        Smile Photo
+      </span>
 
-  <div>
-    <label className="mb-2 block text-sm">
-      Existing Treatment Plan
+      <span className="mt-2 block text-xs leading-5 text-[#746d64]">
+        Front-facing or natural smile
+      </span>
+
+      <input
+        type="file"
+        name="smile_photo"
+        accept="image/jpeg,image/png"
+        className="mt-4 block w-full text-xs file:mr-3 file:border-0 file:bg-[#2b2a28] file:px-3 file:py-2 file:text-xs file:text-white"
+      />
     </label>
-    <input
-      type="file"
-      name="treatment_plan"
-      accept="image/jpeg,image/png,application/pdf"
-      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
-    />
+
+    <label className="cursor-pointer border border-[#cfc7bb] bg-[#f8f5ef] p-5 transition hover:border-[#b99a5f]">
+      <span className="block text-sm font-medium">
+        Dental X-ray
+      </span>
+
+      <span className="mt-2 block text-xs leading-5 text-[#746d64]">
+        Panoramic X-ray or scan
+      </span>
+
+      <input
+        type="file"
+        name="dental_xray"
+        accept="image/jpeg,image/png,application/pdf"
+        className="mt-4 block w-full text-xs file:mr-3 file:border-0 file:bg-[#2b2a28] file:px-3 file:py-2 file:text-xs file:text-white"
+      />
+    </label>
+
+    <label className="cursor-pointer border border-[#cfc7bb] bg-[#f8f5ef] p-5 transition hover:border-[#b99a5f]">
+      <span className="block text-sm font-medium">
+        Treatment Plan
+      </span>
+
+      <span className="mt-2 block text-xs leading-5 text-[#746d64]">
+        Existing report or estimate
+      </span>
+
+      <input
+        type="file"
+        name="treatment_plan"
+        accept="image/jpeg,image/png,application/pdf"
+        className="mt-4 block w-full text-xs file:mr-3 file:border-0 file:bg-[#2b2a28] file:px-3 file:py-2 file:text-xs file:text-white"
+      />
+    </label>
   </div>
 </div>
-              <textarea
-                name="message"
-                rows={6}
-                className={inputClass}
-                placeholder="What would you like to improve about your smile?"
-              />
-            </div>
 
             <button
               type="submit"
