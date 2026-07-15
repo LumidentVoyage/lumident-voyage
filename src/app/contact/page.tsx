@@ -47,10 +47,11 @@ export default function ContactPage() {
 
         <div className="border border-[#ded7cc] bg-[#fbf9f5] p-6 shadow-sm md:p-10">
           <form
-            action="https://formsubmit.co/admin@lumidentvoyage.com"
-            method="POST"
-            className="space-y-7"
-          >
+  action="https://formsubmit.co/admin@lumidentvoyage.com"
+  method="POST"
+  encType="multipart/form-data"
+  className="space-y-7"
+>
           <input
   type="hidden"
   name="_subject"
@@ -198,7 +199,39 @@ export default function ContactPage() {
               <label className="mb-2 block text-sm">
                 Tell us about your goals
               </label>
+<div className="space-y-5">
+  <div>
+    <label className="mb-2 block text-sm">Smile Photo</label>
+    <input
+      type="file"
+      name="smile_photo"
+      accept="image/jpeg,image/png"
+      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
+    />
+  </div>
 
+  <div>
+    <label className="mb-2 block text-sm">Dental X-ray</label>
+    <input
+      type="file"
+      name="dental_xray"
+      accept="image/jpeg,image/png,application/pdf"
+      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
+    />
+  </div>
+
+  <div>
+    <label className="mb-2 block text-sm">
+      Existing Treatment Plan
+    </label>
+    <input
+      type="file"
+      name="treatment_plan"
+      accept="image/jpeg,image/png,application/pdf"
+      className="w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-sm"
+    />
+  </div>
+</div>
               <textarea
                 name="message"
                 rows={6}
