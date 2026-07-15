@@ -54,10 +54,15 @@ export default function ContactPage() {
             <input
               type="hidden"
               name="_subject"
+              <input
+  type="hidden"
+  name="_url"
+  value="https://www.lumidentvoyage.com/contact"
+/>
               value="New Lumident Voyage Consultation"
             />
 
-            <input type="hidden" name="_captcha" value="false" />
+    
 
             <input
               type="hidden"
