@@ -153,8 +153,7 @@ export default function ContactPage() {
                   </option>
                   <option>Porcelain Veneers</option>
                   <option>Full Smile Makeover</option>
-                  <option>Dental Implants</option>
-                  <option>Not Sure Yet</option>
+                  <option>Full Arch Dental Implants</option>
                 </select>
               </div>
 
