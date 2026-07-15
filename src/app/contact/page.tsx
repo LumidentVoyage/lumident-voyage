@@ -47,22 +47,23 @@ export default function ContactPage() {
 
         <div className="border border-[#ded7cc] bg-[#fbf9f5] p-6 shadow-sm md:p-10">
           <form
-            action="https://formsubmit.co/admin@lumidentvoyage.com"
-            method="POST"
-            className="space-y-7"
-          >
-            <input
-              type="hidden"
-              name="_subject"
+          <input
+  type="hidden"
+  name="_subject"
+  value="New Lumident Voyage Consultation"
+/>
+
+<input
   type="hidden"
   name="_url"
   value="https://www.lumidentvoyage.com/contact"
 />
-              value="New Lumident Voyage Consultation"
-            />
 
-    
-
+<input
+  type="hidden"
+  name="_next"
+  value="https://www.lumidentvoyage.com/thank-you"
+/>
             <input
               type="hidden"
               name="_next"
