@@ -2,26 +2,33 @@ import Link from "next/link";
 
 export default function ThankYouPage() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#f8f5ef] px-6 text-[#2b2a28]">
+    <main className="min-h-screen bg-[#f8f6f2] flex items-center justify-center px-6">
       <div className="max-w-2xl text-center">
-        <p className="mb-5 text-xs uppercase tracking-[0.35em] text-[#b99a5f]">
-          Inquiry Received
+        <p className="text-sm tracking-[0.3em] uppercase text-[#b89c5c] mb-6">
+          Lumident Voyage
         </p>
 
-        <h1 className="font-serif text-5xl md:text-6xl">
-          Thank you for reaching out.
+        <h1 className="text-5xl md:text-6xl font-serif text-[#1f1f1f] mb-6">
+          Thank You
         </h1>
 
-        <p className="mx-auto mt-8 max-w-xl text-lg leading-8 text-[#686159]">
-          A Lumident Voyage coordinator will review your inquiry and contact you
-          shortly.
+        <p className="text-lg text-gray-600 leading-8 mb-10">
+          Your consultation request has been received.
+          Our team will review your information and contact you shortly to
+          arrange your complimentary consultation.
         </p>
+
+        <div className="space-y-3 text-gray-600 mb-12">
+          <p>✓ Response within 24 hours</p>
+          <p>✓ Personalized treatment guidance</p>
+          <p>✓ Complimentary virtual consultation</p>
+        </div>
 
         <Link
           href="/"
-          className="mt-10 inline-block border border-[#2b2a28] px-8 py-4 text-sm uppercase tracking-[0.18em]"
+          className="inline-block bg-black text-white px-10 py-4 rounded-lg hover:opacity-90 transition"
         >
-          Return Home
+          Return to Homepage
         </Link>
       </div>
     </main>
