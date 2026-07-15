@@ -114,14 +114,41 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-7 md:grid-cols-2">
-              <div>
-                <label className="mb-2 block text-sm">Phone Number</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  className={inputClass}
-                />
-              </div>
+             <div>
+  <label className="mb-2 block text-sm">Phone Number</label>
+
+  <div className="grid grid-cols-[130px_1fr] gap-3">
+    <select
+      name="country_code"
+      defaultValue="+1"
+      className={inputClass}
+      aria-label="Country calling code"
+    >
+      <option value="+1">🇺🇸 +1 United States</option>
+      <option value="+971">🇦🇪 +971</option>
+      <option value="+44">🇬🇧 +44</option>
+      <option value="+1">🇨🇦 +1 Canada</option>
+      <option value="+966">🇸🇦 +966</option>
+      <option value="+974">🇶🇦 +974</option>
+      <option value="+965">🇰🇼 +965</option>
+      <option value="+973">🇧🇭 +973</option>
+      <option value="+968">🇴🇲 +968</option>
+      <option value="+49">🇩🇪 +49</option>
+      <option value="+33">🇫🇷 +33</option>
+      <option value="+39">🇮🇹 +39</option>
+      <option value="+34">🇪🇸 +34</option>
+      <option value="+61">🇦🇺 +61</option>
+    </select>
+
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+      className={inputClass}
+    />
+  </div>
+</div>
 
               <div>
                 <label className="mb-2 block text-sm">State or Country</label>
