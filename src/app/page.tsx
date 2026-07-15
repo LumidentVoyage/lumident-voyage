@@ -165,7 +165,7 @@ export default function Home() {
               FAQ
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
             >
               Consultation
@@ -486,11 +486,11 @@ export default function Home() {
               something thoughtfully considered.
             </p>
             <a
-              href="mailto:hello@lumidentvoyage.com"
-              className="mt-10 inline-flex items-center justify-center bg-charcoal px-10 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
-            >
-              Start Your Consultation
-            </a>
+  href="/contact"
+  className="mt-10 inline-flex items-center justify-center bg-charcoal px-10 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
+>
+  Start Your Consultation
+</a>
           </div>
         </section>
       </main>
