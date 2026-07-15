@@ -165,7 +165,7 @@ export default function Home() {
               FAQ
             </a>
             <a
-              href="#consultation"
+              href="#contact"
               className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
             >
               Consultation
@@ -191,7 +191,7 @@ export default function Home() {
                   FAQ
                 </a>
                 <a
-                  href="#consultation"
+                 href="/contact"
                   className="border border-charcoal px-4 py-2 text-center text-sm"
                 >
                   Consultation
