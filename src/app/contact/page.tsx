@@ -54,7 +54,6 @@ export default function ContactPage() {
             <input
               type="hidden"
               name="_subject"
-              <input
   type="hidden"
   name="_url"
   value="https://www.lumidentvoyage.com/contact"
