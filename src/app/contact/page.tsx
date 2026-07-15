@@ -47,51 +47,18 @@ export default function ContactPage() {
 
         <div className="border border-[#ded7cc] bg-[#fbf9f5] p-6 shadow-sm md:p-10">
           <form
-  action="https://formsubmit.co/admin@lumidentvoyage.com"
-  method="POST"
-  className="space-y-7"
->
-     <input
-  type="hidden"
-  name="_subject"
-  value="New Lumident Voyage Consultation"
-/>
+            action="https://formsubmit.co/admin@lumidentvoyage.com"
+            method="POST"
+            className="space-y-7"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Lumident Voyage Consultation"
+            />
 
-             <input
-    type="hidden"
-    name="_captcha"
-    value="false"
-  />
+            <input type="hidden" name="_captcha" value="false" />
 
-  <input
-    type="hidden"
-    name="_next"
-    value="https://www.lumidentvoyage.com/thank-you"
-  />
-
-  <div>
-    <label className="block mb-2">
-      Full Name
-    </label>
-    <input
-      type="text"
-      name="name"
-      required
-      className="w-full border p-4 rounded-lg"
-    />
-  </div>
-
-<input
-  type="hidden"
-  name="_url"
-  value="https://www.lumidentvoyage.com/contact"
-/>
-
-<input
-  type="hidden"
-  name="_next"
-  value="https://www.lumidentvoyage.com/thank-you"
-/>
             <input
               type="hidden"
               name="_next"
@@ -100,7 +67,14 @@ export default function ContactPage() {
 
             <div className="grid gap-7 md:grid-cols-2">
               <div>
-             
+                <label className="mb-2 block text-sm">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className={inputClass}
+                />
+              </div>
 
               <div>
                 <label className="mb-2 block text-sm">Email Address</label>
@@ -114,44 +88,46 @@ export default function ContactPage() {
             </div>
 
             <div className="grid gap-7 md:grid-cols-2">
-             <div>
-  <label className="mb-2 block text-sm">Phone Number</label>
+              <div>
+                <label className="mb-2 block text-sm">Phone Number</label>
 
-  <div className="grid grid-cols-[130px_1fr] gap-3">
-    <select
-      name="country_code"
-      defaultValue="+1"
-      className={inputClass}
-      aria-label="Country calling code"
-    >
-      <option value="+1">🇺🇸 +1 United States</option>
-      <option value="+971">🇦🇪 +971</option>
-      <option value="+44">🇬🇧 +44</option>
-      <option value="+1">🇨🇦 +1 Canada</option>
-      <option value="+966">🇸🇦 +966</option>
-      <option value="+974">🇶🇦 +974</option>
-      <option value="+965">🇰🇼 +965</option>
-      <option value="+973">🇧🇭 +973</option>
-      <option value="+968">🇴🇲 +968</option>
-      <option value="+49">🇩🇪 +49</option>
-      <option value="+33">🇫🇷 +33</option>
-      <option value="+39">🇮🇹 +39</option>
-      <option value="+34">🇪🇸 +34</option>
-      <option value="+61">🇦🇺 +61</option>
-    </select>
+                <div className="grid grid-cols-[145px_1fr] gap-3">
+                  <select
+                    name="country_code"
+                    defaultValue="+1 US"
+                    className={inputClass}
+                    aria-label="Country calling code"
+                  >
+                    <option value="+1 US">🇺🇸 +1 USA</option>
+                    <option value="+1 CA">🇨🇦 +1 Canada</option>
+                    <option value="+971">🇦🇪 +971 UAE</option>
+                    <option value="+44">🇬🇧 +44 UK</option>
+                    <option value="+966">🇸🇦 +966 Saudi</option>
+                    <option value="+974">🇶🇦 +974 Qatar</option>
+                    <option value="+965">🇰🇼 +965 Kuwait</option>
+                    <option value="+973">🇧🇭 +973 Bahrain</option>
+                    <option value="+968">🇴🇲 +968 Oman</option>
+                    <option value="+49">🇩🇪 +49 Germany</option>
+                    <option value="+33">🇫🇷 +33 France</option>
+                    <option value="+39">🇮🇹 +39 Italy</option>
+                    <option value="+34">🇪🇸 +34 Spain</option>
+                    <option value="+61">🇦🇺 +61 Australia</option>
+                  </select>
 
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Phone number"
-      required
-      className={inputClass}
-    />
-  </div>
-</div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone number"
+                    required
+                    className={inputClass}
+                  />
+                </div>
+              </div>
 
               <div>
-                <label className="mb-2 block text-sm">State or Country</label>
+                <label className="mb-2 block text-sm">
+                  State or Country
+                </label>
                 <input
                   type="text"
                   name="location"
@@ -165,6 +141,7 @@ export default function ContactPage() {
                 <label className="mb-2 block text-sm">
                   Treatment Interest
                 </label>
+
                 <select
                   name="treatment"
                   className={inputClass}
@@ -185,6 +162,7 @@ export default function ContactPage() {
                 <label className="mb-2 block text-sm">
                   Preferred Travel Time
                 </label>
+
                 <select
                   name="travel_time"
                   className={inputClass}
@@ -205,6 +183,7 @@ export default function ContactPage() {
               <label className="mb-2 block text-sm">
                 Tell us about your goals
               </label>
+
               <textarea
                 name="message"
                 rows={6}
