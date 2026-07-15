@@ -73,6 +73,9 @@ export default function ContactPage() {
   type="hidden"
   name="_url"
   value="https://www.lumidentvoyage.com/contact"
+/>
+
+<div className="grid gap-7 md:grid-cols-2">
 
             <div className="grid gap-7 md:grid-cols-2">
               <div>
