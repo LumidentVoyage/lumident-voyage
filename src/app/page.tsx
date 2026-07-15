@@ -190,12 +190,12 @@ export default function Home() {
                 <a href="#faq" className="text-sm text-charcoal-muted">
                   FAQ
                 </a>
-                <a
-                 href="/contact"
-                  className="border border-charcoal px-4 py-2 text-center text-sm"
-                >
-                  Consultation
-                </a>
+               <a
+  href="/contact"
+  className="border border-[#2b2a28] px-6 py-3 transition hover:bg-[#2b2a28] hover:text-white"
+>
+  Consultation
+</a>
               </div>
             </div>
           </details>
@@ -219,12 +219,11 @@ export default function Home() {
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <a
-                  href="#consultation"
-                  className="inline-flex items-center justify-center bg-charcoal px-8 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
-                >
-                  <Link href="/contact">   Start Your Consultation </Link>
-                
-                </a>
+  href="/contact"
+  className="inline-flex items-center justify-center bg-[#2b2a28] px-8 py-4 text-white transition hover:bg-[#45413d]"
+>
+  Start Your Consultation
+</a>
                 <a
                   href="#journey"
                   className="inline-flex items-center justify-center border border-charcoal px-8 py-4 text-sm font-medium tracking-wide text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
