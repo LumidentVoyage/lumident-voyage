@@ -51,19 +51,28 @@ export default function ContactPage() {
             method="POST"
             className="space-y-7"
           >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Lumident Voyage Consultation"
-            />
+          <input
+  type="hidden"
+  name="_subject"
+  value="New Lumident Voyage Consultation"
+/>
 
-            <input type="hidden" name="_captcha" value="false" />
+<input
+  type="hidden"
+  name="_autoresponse"
+  value="Thank you for contacting Lumident Voyage. We have received your consultation request and a member of our team will contact you within 24 hours to discuss your goals and next steps. We look forward to helping you begin your smile journey in Dubai. — Lumident Voyage"
+/>
 
-            <input
-              type="hidden"
-              name="_next"
-              value="https://www.lumidentvoyage.com/thank-you"
-            />
+<input
+  type="hidden"
+  name="_next"
+  value="https://www.lumidentvoyage.com/thank-you"
+/>
+
+<input
+  type="hidden"
+  name="_url"
+  value="https://www.lumidentvoyage.com/contact"
 
             <div className="grid gap-7 md:grid-cols-2">
               <div>
