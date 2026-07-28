@@ -333,11 +333,19 @@ export default function ContactPage() {
   </label>
 </div>
 
-  <div className="mt-8">
+ <div className="mt-8">
   <button
     type="submit"
-    className="..."
+    className="w-full bg-[#2b2a28] px-8 py-5 text-sm uppercase tracking-[0.22em] text-white transition hover:bg-[#b99a5f]"
   >
     Request Consultation
   </button>
 </div>
+
+</form>
+</div>
+</div>
+</section>
+</main>
+  );
+}
