@@ -139,7 +139,51 @@ export default function Home() {
             Lumident Voyage
           </a>
 
-        <details className="group relative md:hidden">
+      <div className="hidden items-center gap-10 md:flex">
+  <a
+    href="#journey"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    The Journey
+  </a>
+
+  <a
+    href="#veneers"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Veneers
+  </a>
+
+  <a
+    href="#dubai"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Dubai
+  </a>
+
+  <Link
+    href="/doctors"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Meet the Doctor
+  </Link>
+
+  <a
+    href="#faq"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    FAQ
+  </a>
+
+  <Link
+    href="/contact"
+    className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
+  >
+    Consultation
+  </Link>
+</div>
+
+<details className="group relative md:hidden">
   <summary className="cursor-pointer list-none text-sm font-medium uppercase tracking-widest text-charcoal [&::-webkit-details-marker]:hidden">
     Menu
   </summary>
@@ -178,8 +222,11 @@ export default function Home() {
     </div>
   </div>
 </details>
-          
-      <main>
+</nav>
+</header>
+
+<main>
+  
         {/* Hero */}
         <section className="mx-auto max-w-7xl px-6 pb-24 pt-16 lg:px-10 lg:pb-32 lg:pt-24">
           <div className="grid items-center gap-16 lg:grid-cols-2 lg:items-start lg:gap-20">
