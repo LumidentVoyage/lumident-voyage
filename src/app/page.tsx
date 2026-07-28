@@ -298,25 +298,42 @@ export default function Home() {
                 with the same care and attention — so you never navigate alone.
               </p>
             </div>
-            <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
-              {journeySteps.map((item) => (
-                <article
-                  key={item.step}
-                  className="bg-ivory p-8 lg:p-10"
-                >
-                  <span className="font-serif text-2xl text-gold">{item.step}</span>
-                  <h3 className="mt-4 font-serif text-xl font-medium text-charcoal">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-charcoal-muted">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
+          <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+  {journeySteps.map((item) => (
+    <article
+      key={item.step}
+      className="bg-ivory p-8 lg:p-10"
+    >
+      <span className="font-serif text-2xl text-gold">
+        {item.step}
+      </span>
+
+      <h3 className="mt-4 font-serif text-xl font-medium text-charcoal">
+        {item.title}
+      </h3>
+
+      <p className="mt-3 text-sm leading-relaxed text-charcoal-muted">
+        {item.description}
+      </p>
+    </article>
+  ))}
 </div>
+
+<div className="mt-16 flex justify-center">
+  <Link
+    href="/journey"
+    className="group inline-flex items-center gap-3 border border-charcoal px-8 py-4 text-xs uppercase tracking-[0.22em] text-charcoal transition-all duration-300 hover:border-gold hover:bg-gold hover:text-ivory"
+  >
+    Explore the Full Journey
+
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+</div>
+
+</div>
+</section>
 
 <div className="mt-16 flex justify-center">
   <Link
