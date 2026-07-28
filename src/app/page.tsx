@@ -1,3 +1,5 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -130,7 +132,7 @@ export default function Home() {
   return (
     <div className="bg-ivory text-charcoal">
       {/* Navigation */}
-      <header className="sticky top-0 z-50 border-b border-border/80 bg-ivory/95 backdrop-blur-sm">
+      < className="sticky top-0 z-50 border-b border-border/80 bg-ivory/95 backdrop-blur-sm">
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
           <a
             href="#"
@@ -223,7 +225,7 @@ export default function Home() {
   </div>
 </details>
 </nav>
-</header>
+</>
 
 <main>
   
@@ -548,7 +550,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border">
+      < className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
           <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
             <div className="sm:col-span-2">
@@ -626,7 +628,5 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </footer>
-    </div>
   );
 }
