@@ -470,24 +470,33 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Final CTA */}
-        <section id="consultation" className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-          <div className="border border-border bg-ivory-muted px-8 py-16 text-center sm:px-16 sm:py-20">
-            <SectionLabel>Begin</SectionLabel>
-            <h2 className="font-serif text-3xl font-medium tracking-tight text-charcoal sm:text-4xl">
-              Your journey starts with a conversation
-            </h2>
-            <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-charcoal-muted">
-              Schedule a complimentary virtual consultation with our team. No
-              obligation — only clarity, discretion, and the beginning of
-              something thoughtfully considered.
-            </p>
-            <Link
-  href="/contact"
-  className="mt-10 inline-flex items-center justify-center bg-charcoal px-10 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
+      {/* Final CTA */}
+<section
+  id="consultation"
+  className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32"
 >
-  Start Your Consultation
-</a>
+  <div className="border border-border bg-ivory-muted px-8 py-16 text-center sm:px-16 sm:py-20">
+    <SectionLabel>Begin</SectionLabel>
+
+    <h2 className="font-serif text-3xl font-medium tracking-tight text-charcoal sm:text-4xl">
+      Your journey starts with a conversation
+    </h2>
+
+    <p className="mx-auto mt-6 max-w-lg text-base leading-relaxed text-charcoal-muted">
+      Schedule a complimentary virtual consultation with our team. No
+      obligation — only clarity, discretion, and the beginning of something
+      thoughtfully considered.
+    </p>
+
+    <Link
+      href="/contact"
+      className="mt-10 inline-flex items-center justify-center bg-charcoal px-10 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
+    >
+      Start Your Consultation
+    </Link>
+  </div>
+</section>
+        
           </div>
         </section>
       </main>
