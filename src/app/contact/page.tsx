@@ -1,9 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 const inputClass =
   "w-full border border-[#b8b0a4] bg-transparent px-4 py-4 text-[#2b2a28] outline-none transition focus:border-[#b99a5f]";
 
 export default function ContactPage() {
+  const [consentGiven, setConsentGiven] = useState(false);
+
   return (
     <main className="min-h-screen bg-[#f8f5ef] text-[#2b2a28]">
       <header className="border-b border-[#e3ddd3]">
@@ -52,11 +57,7 @@ export default function ContactPage() {
   encType="multipart/form-data"
   className="space-y-7"
 >
-          <input
-  type="hidden"
-  name="_subject"
-  value="New Lumident Voyage Consultation"
-/>
+
 
 <input
   type="hidden"
@@ -320,13 +321,14 @@ export default function ContactPage() {
 
 <div className="rounded-md border border-[#d8d1c6] bg-[#faf8f4] p-5">
   <label className="flex items-start gap-3 text-sm leading-6 text-[#686159]">
-    <input
-      type="checkbox"
-      name="consent"
-      required
-      className="mt-1 h-4 w-4 accent-[#2b2a28]"
-    />
-
+  <input
+  type="checkbox"
+  name="consent"
+  required
+  checked={consentGiven}
+  onChange={(e) => setConsentGiven(e.target.checked)}
+  className="mt-1 h-4 w-4 accent-[#b99a5f]"
+/>
     <span>
       I consent to Lumident Voyage reviewing my information and contacting me
       regarding my consultation request. I understand that a final diagnosis
@@ -336,12 +338,23 @@ export default function ContactPage() {
 </div>
             
 <div className="mt-8">
-  <button
-    type="submit"
-    className="w-full bg-[#2b2a28] px-8 py-5 text-sm uppercase tracking-[0.22em] text-white transition hover:bg-[#b99a5f]"
-  >
-    Request Consultation
-  </button>
+<button
+  type="submit"
+  disabled={!consentGiven}
+  className={`w-full px-8 py-5 text-sm uppercase tracking-[0.22em] duration-300
+    ${
+      consentGiven
+        ? "bg-[#2b2a28] text-white hover:bg-[#b99a5f] hover:text-[#2b2a28] cursor-pointer"
+        : "bg-[#ddd7cd] text-[#8a8379] cursor-not-allowed"
+    }`}
+>
+  Request Consultation
+</button>
+  {!consentGiven && (
+  <p className="mt-3 text-center text-xs text-[#8a8379]">
+    Please accept the privacy notice to continue.
+  </p>
+)}
 </div>
 
 </form>
