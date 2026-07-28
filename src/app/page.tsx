@@ -139,39 +139,49 @@ export default function Home() {
             Lumident Voyage
           </a>
 
-          <div className="hidden items-center gap-10 md:flex">
-            <a
-              href="#journey"
-              className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-            >
-              The Journey
-            </a>
-            <a
-              href="#veneers"
-              className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-            >
-              Veneers
-            </a>
-            <a
-              href="#dubai"
-              className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-            >
-              Dubai
-            </a>
-            <a
-              href="#faq"
-              className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-            >
-              FAQ
-            </a>
-            <a
-              href="/contact"
-              className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
-            >
-              Consultation
-            </a>
-          </div>
+         <div className="hidden items-center gap-10 md:flex">
+  <a
+    href="#journey"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    The Journey
+  </a>
 
+  <a
+    href="#veneers"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Veneers
+  </a>
+
+  <a
+    href="#dubai"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Dubai
+  </a>
+
+  <Link
+    href="/doctors"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Meet the Doctor
+  </Link>
+
+  <a
+    href="#faq"
+    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    FAQ
+  </a>
+
+  <Link
+    href="/contact"
+    className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
+  >
+    Consultation
+  </Link>
+</div>
           <details className="group relative md:hidden">
             <summary className="cursor-pointer list-none text-sm font-medium uppercase tracking-widest text-charcoal [&::-webkit-details-marker]:hidden">
               Menu
