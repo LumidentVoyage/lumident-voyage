@@ -287,67 +287,53 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Six-step journey */}
-        <section id="journey" className="border-t border-border bg-ivory-muted">
-          <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
-            <div className="max-w-2xl">
-              <SectionLabel>Your Path</SectionLabel>
-              <SectionHeading>A six-step patient journey</SectionHeading>
-              <p className="mt-6 text-base leading-relaxed text-charcoal-muted">
-                From first inquiry to lasting results, each phase is handled
-                with the same care and attention — so you never navigate alone.
-              </p>
-            </div>
-          <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
-  {journeySteps.map((item) => (
-    <article
-      key={item.step}
-      className="bg-ivory p-8 lg:p-10"
-    >
-      <span className="font-serif text-2xl text-gold">
-        {item.step}
-      </span>
+   {/* Six-step journey */}
+<section id="journey" className="border-t border-border bg-ivory-muted">
+  <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+    <div className="max-w-2xl">
+      <SectionLabel>Your Path</SectionLabel>
+      <SectionHeading>A six-step patient journey</SectionHeading>
 
-      <h3 className="mt-4 font-serif text-xl font-medium text-charcoal">
-        {item.title}
-      </h3>
-
-      <p className="mt-3 text-sm leading-relaxed text-charcoal-muted">
-        {item.description}
+      <p className="mt-6 text-base leading-relaxed text-charcoal-muted">
+        From first inquiry to lasting results, each phase is handled
+        with the same care and attention — so you never navigate alone.
       </p>
-    </article>
-  ))}
-</div>
+    </div>
 
-<div className="mt-16 flex justify-center">
-  <Link
-    href="/journey"
-    className="group inline-flex items-center gap-3 border border-charcoal px-8 py-4 text-xs uppercase tracking-[0.22em] text-charcoal transition-all duration-300 hover:border-gold hover:bg-gold hover:text-ivory"
-  >
-    Explore the Full Journey
+    <div className="mt-16 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+      {journeySteps.map((item) => (
+        <article
+          key={item.step}
+          className="bg-ivory p-8 lg:p-10"
+        >
+          <span className="font-serif text-2xl text-gold">
+            {item.step}
+          </span>
 
-    <span className="transition-transform duration-300 group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
-</div>
+          <h3 className="mt-4 font-serif text-xl font-medium text-charcoal">
+            {item.title}
+          </h3>
 
-</div>
-</section>
+          <p className="mt-3 text-sm leading-relaxed text-charcoal-muted">
+            {item.description}
+          </p>
+        </article>
+      ))}
+    </div>
 
-<div className="mt-16 flex justify-center">
-  <Link
-    href="/journey"
-    className="group inline-flex items-center gap-3 border border-charcoal px-8 py-4 text-xs uppercase tracking-[0.22em] text-charcoal transition-all duration-300 hover:border-gold hover:bg-gold hover:text-ivory"
-  >
-    Explore the Full Journey
-    <span className="transition-transform duration-300 group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
-</div>
+    <div className="mt-16 flex justify-center">
+      <Link
+        href="/journey"
+        className="group inline-flex items-center gap-3 border border-charcoal px-8 py-4 text-xs uppercase tracking-[0.22em] text-charcoal transition-all duration-300 hover:border-gold hover:bg-gold hover:text-ivory"
+      >
+        Explore the Full Journey
 
-</div>
+        <span className="transition-transform duration-300 group-hover:translate-x-1">
+          →
+        </span>
+      </Link>
+    </div>
+  </div>
 </section>
     
         {/* What the journey can include */}
