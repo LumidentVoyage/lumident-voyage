@@ -194,20 +194,21 @@ export default function Home() {
                 American patients who expect precision, discretion, and beauty in
                 equal measure.
               </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <Link
-  href="/contact"
-  className="inline-flex items-center justify-center bg-[#2b2a28] px-8 py-4 text-white transition hover:bg-[#45413d]"
->
-  Start Your Consultation
-</a>
-                <a
-                  href="#journey"
-                  className="inline-flex items-center justify-center border border-charcoal px-8 py-4 text-sm font-medium tracking-wide text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
-                >
-                  Explore the Journey
-                </a>
-              </div>
+           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+  <Link
+    href="/contact"
+    className="inline-flex items-center justify-center bg-[#2b2a28] px-8 py-4 text-white transition hover:bg-[#45413d]"
+  >
+    Start Your Consultation
+  </Link>
+
+  <a
+    href="#journey"
+    className="inline-flex items-center justify-center border border-charcoal px-8 py-4 text-sm font-medium tracking-wide text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
+  >
+    Explore the Journey
+  </a>
+</div>
             </div>
             <div className="group relative aspect-[5/6] w-full max-w-md justify-self-center overflow-hidden rounded-2xl lg:aspect-auto lg:max-w-none lg:min-h-[720px]">
               <Image
