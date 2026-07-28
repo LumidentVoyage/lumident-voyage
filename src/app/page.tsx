@@ -188,24 +188,36 @@ export default function Home() {
             </summary>
             <div className="absolute right-0 mt-4 w-48 border border-border bg-ivory p-4 shadow-sm">
               <div className="flex flex-col gap-4">
-                <a href="#journey" className="text-sm text-charcoal-muted">
-                  The Journey
-                </a>
-                <a href="#veneers" className="text-sm text-charcoal-muted">
-                  Veneers
-                </a>
-                <a href="#dubai" className="text-sm text-charcoal-muted">
-                  Dubai
-                </a>
-                <a href="#faq" className="text-sm text-charcoal-muted">
-                  FAQ
-                </a>
-               <a
-  href="/contact"
-  className="border border-[#2b2a28] px-6 py-3 transition hover:bg-[#2b2a28] hover:text-white"
->
-  Consultation
-</a>
+  <a href="#journey" className="text-sm text-charcoal-muted">
+    The Journey
+  </a>
+
+  <a href="#veneers" className="text-sm text-charcoal-muted">
+    Veneers
+  </a>
+
+  <a href="#dubai" className="text-sm text-charcoal-muted">
+    Dubai
+  </a>
+
+  <Link
+    href="/doctors"
+    className="text-sm text-charcoal-muted transition-colors hover:text-charcoal"
+  >
+    Meet the Doctor
+  </Link>
+
+  <a href="#faq" className="text-sm text-charcoal-muted">
+    FAQ
+  </a>
+
+  <Link
+    href="/contact"
+    className="border border-[#2b2a28] px-6 py-3 text-center transition hover:bg-[#2b2a28] hover:text-white"
+  >
+    Consultation
+  </Link>
+</div>
               </div>
             </div>
           </details>
@@ -228,7 +240,7 @@ export default function Home() {
                 equal measure.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <a
+                <Link
   href="/contact"
   className="inline-flex items-center justify-center bg-[#2b2a28] px-8 py-4 text-white transition hover:bg-[#45413d]"
 >
@@ -348,7 +360,23 @@ export default function Home() {
             </div>
           </div>
         </section>
+</div>
 
+<div className="mt-16 flex justify-center">
+  <Link
+    href="/journey"
+    className="group inline-flex items-center gap-3 border border-charcoal px-8 py-4 text-xs uppercase tracking-[0.22em] text-charcoal transition-all duration-300 hover:border-gold hover:bg-gold hover:text-ivory"
+  >
+    Explore the Full Journey
+    <span className="transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+</div>
+
+</div>
+</section>
+    
         {/* What the journey can include */}
         <section className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
           <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
@@ -495,7 +523,7 @@ export default function Home() {
               obligation — only clarity, discretion, and the beginning of
               something thoughtfully considered.
             </p>
-            <a
+            <Link
   href="/contact"
   className="mt-10 inline-flex items-center justify-center bg-charcoal px-10 py-4 text-sm font-medium tracking-wide text-ivory transition-colors hover:bg-charcoal/90"
 >
