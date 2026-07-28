@@ -139,91 +139,46 @@ export default function Home() {
             Lumident Voyage
           </a>
 
-         <div className="hidden items-center gap-10 md:flex">
-  <a
-    href="#journey"
-    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    The Journey
-  </a>
+        <details className="group relative md:hidden">
+  <summary className="cursor-pointer list-none text-sm font-medium uppercase tracking-widest text-charcoal [&::-webkit-details-marker]:hidden">
+    Menu
+  </summary>
 
-  <a
-    href="#veneers"
-    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    Veneers
-  </a>
+  <div className="absolute right-0 mt-4 w-48 border border-border bg-ivory p-4 shadow-sm">
+    <div className="flex flex-col gap-4">
+      <a href="#journey" className="text-sm text-charcoal-muted">
+        The Journey
+      </a>
 
-  <a
-    href="#dubai"
-    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    Dubai
-  </a>
+      <a href="#veneers" className="text-sm text-charcoal-muted">
+        Veneers
+      </a>
 
-  <Link
-    href="/doctors"
-    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    Meet the Doctor
-  </Link>
+      <a href="#dubai" className="text-sm text-charcoal-muted">
+        Dubai
+      </a>
 
-  <a
-    href="#faq"
-    className="text-sm tracking-wide text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    FAQ
-  </a>
+      <Link
+        href="/doctors"
+        className="text-sm text-charcoal-muted transition-colors hover:text-charcoal"
+      >
+        Meet the Doctor
+      </Link>
 
-  <Link
-    href="/contact"
-    className="border border-charcoal px-5 py-2.5 text-sm tracking-wide transition-colors hover:bg-charcoal hover:text-ivory"
-  >
-    Consultation
-  </Link>
-</div>
-          <details className="group relative md:hidden">
-            <summary className="cursor-pointer list-none text-sm font-medium uppercase tracking-widest text-charcoal [&::-webkit-details-marker]:hidden">
-              Menu
-            </summary>
-            <div className="absolute right-0 mt-4 w-48 border border-border bg-ivory p-4 shadow-sm">
-              <div className="flex flex-col gap-4">
-  <a href="#journey" className="text-sm text-charcoal-muted">
-    The Journey
-  </a>
+      <a href="#faq" className="text-sm text-charcoal-muted">
+        FAQ
+      </a>
 
-  <a href="#veneers" className="text-sm text-charcoal-muted">
-    Veneers
-  </a>
-
-  <a href="#dubai" className="text-sm text-charcoal-muted">
-    Dubai
-  </a>
-
-  <Link
-    href="/doctors"
-    className="text-sm text-charcoal-muted transition-colors hover:text-charcoal"
-  >
-    Meet the Doctor
-  </Link>
-
-  <a href="#faq" className="text-sm text-charcoal-muted">
-    FAQ
-  </a>
-
-  <Link
-    href="/contact"
-    className="border border-[#2b2a28] px-6 py-3 text-center transition hover:bg-[#2b2a28] hover:text-white"
-  >
-    Consultation
-  </Link>
-</div>
-              </div>
-            </div>
-          </details>
-        </nav>
-      </header>
-
+      <Link
+        href="/contact"
+        className="border border-[#2b2a28] px-6 py-3 text-center transition hover:bg-[#2b2a28] hover:text-white"
+      >
+        Consultation
+      </Link>
+    </div>
+  </div>
+</details>
+          
       <main>
         {/* Hero */}
         <section className="mx-auto max-w-7xl px-6 pb-24 pt-16 lg:px-10 lg:pb-32 lg:pt-24">
