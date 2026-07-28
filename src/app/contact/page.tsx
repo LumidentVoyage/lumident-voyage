@@ -193,12 +193,55 @@ export default function ContactPage() {
                   <option>Still exploring</option>
                 </select>
               </div>
+              
             </div>
+<div className="grid gap-7 md:grid-cols-2">
+  <div>
+    <label className="mb-2 block text-sm">
+      Preferred Contact Method
+    </label>
 
+    <select
+      name="preferred_contact"
+      defaultValue=""
+      required
+      className={inputClass}
+    >
+      <option value="" disabled>
+        Select a contact method
+      </option>
+      <option value="WhatsApp">WhatsApp</option>
+      <option value="Email">Email</option>
+      <option value="Phone Call">Phone Call</option>
+      <option value="Video Consultation">Video Consultation</option>
+    </select>
+  </div>
+
+  <div>
+    <label className="mb-2 block text-sm">
+      Best Time to Contact You
+    </label>
+
+    <select
+      name="best_contact_time"
+      defaultValue=""
+      className={inputClass}
+    >
+      <option value="" disabled>
+        Select a time
+      </option>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+      <option value="Any time">Any time</option>
+    </select>
+  </div>
+</div>
+            
 <div>
-  <label className="mb-2 block text-sm">
-    Tell us about your goals
-  </label>
+ <label className="mb-2 block text-sm">
+  Tell Us About Your Smile Goals
+</label>
 
   <textarea
     name="message"
@@ -279,6 +322,21 @@ export default function ContactPage() {
               type="submit"
               className="w-full bg-[#2b2a28] px-8 py-5 text-sm uppercase tracking-[0.18em] text-white transition hover:bg-[#45413d]"
             >
+              <label className="flex items-start gap-3 text-sm leading-6 text-[#686159]">
+  <input
+    type="checkbox"
+    name="consent"
+    required
+    className="mt-1 h-4 w-4 shrink-0 accent-[#2b2a28]"
+  />
+
+  <span>
+    I consent to Lumident Voyage using the information and files I provide
+    to review my inquiry and contact me regarding a consultation. I
+    understand that no diagnosis or final treatment plan is provided until
+    I have been examined by a qualified dental professional.
+  </span>
+</label>
               Request Consultation
             </button>
           </form>
