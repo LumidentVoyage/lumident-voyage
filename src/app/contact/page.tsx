@@ -316,32 +316,28 @@ export default function ContactPage() {
       />
     </label>
   </div>
+<div className="rounded-md border border-[#d8d1c6] bg-[#faf8f4] p-5">
+  <label className="flex items-start gap-3 text-sm leading-6 text-[#686159]">
+    <input
+      type="checkbox"
+      name="consent"
+      required
+      className="mt-1 h-4 w-4 accent-[#2b2a28]"
+    />
+
+    <span>
+      I consent to Lumident Voyage reviewing my information and contacting me
+      regarding my consultation request. I understand that a final diagnosis
+      and treatment plan require an in-person clinical examination.
+    </span>
+  </label>
 </div>
 
-            <button
-              type="submit"
-              className="w-full bg-[#2b2a28] px-8 py-5 text-sm uppercase tracking-[0.18em] text-white transition hover:bg-[#45413d]"
-            >
-              <label className="flex items-start gap-3 text-sm leading-6 text-[#686159]">
-  <input
-    type="checkbox"
-    name="consent"
-    required
-    className="mt-1 h-4 w-4 shrink-0 accent-[#2b2a28]"
-  />
-
-  <span>
-    I consent to Lumident Voyage using the information and files I provide
-    to review my inquiry and contact me regarding a consultation. I
-    understand that no diagnosis or final treatment plan is provided until
-    I have been examined by a qualified dental professional.
-  </span>
-</label>
-              Request Consultation
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
-  );
-}
+  <div className="mt-8">
+  <button
+    type="submit"
+    className="..."
+  >
+    Request Consultation
+  </button>
+</div>
